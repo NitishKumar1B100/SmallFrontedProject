@@ -1,0 +1,28 @@
+.note-gallery {
+    display: flex;
+    flex-wrap: wrap; /* This makes the cards wrap to the next line */
+    gap: 20px;
+}
+
+.note-card {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: calc(33.33% - 20px); /* Set a maximum width for each card */
+    box-sizing: border-box; /* Include padding in the max-width calculation */
+}
+
+/* Adjust the maximum width for smaller screens as needed */
+@media (max-width: 768px) {
+    .note-card {
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .note-card {
+        max-width: 100%;
+    }
+}

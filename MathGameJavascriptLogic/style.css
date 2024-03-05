@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.restart{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: #0000007c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.restart button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.showRestart{
+    visibility: hidden;
+    transition: .3s;
+    display: none;
+}
+.question{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.anaouncement{
+    font-size: 20px;
+    color: #fff;
+}
+input{
+    text-align: center;
+}

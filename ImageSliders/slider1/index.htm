@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Image Slider-1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sliders">
+            <div class="slide">
+                <img src="slide-1.jpg" width="100%" height="100%">
+            </div>
+            <div class="slide">
+                <img src="slide-2.jpg" width="100%" height="100%">
+            </div>
+            <div class="slide">
+                <img src="slide-3.jpg" width="100%" height="100%">
+            </div>
+            <div class="slide">
+                <img src="slide-4.jpg" width="100%" height="100%">
+            </div>
+        </div>
+        <div class="dots">
+            <div class="dot" onclick="currentSLide(0)"></div>
+            <div class="dot" onclick="currentSLide(1)"></div>
+            <div class="dot" onclick="currentSLide(2)"></div>
+            <div class="dot" onclick="currentSLide(3)"></div>
+        </div>
+        <div class="buttons">
+            <button id="prev" onclick="nextSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="next" onclick="nextSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
